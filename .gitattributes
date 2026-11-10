@@ -1,2 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Game plugins are binary: never normalize line endings in them
+*.esp binary
+*.esm binary
+*.esl binary
