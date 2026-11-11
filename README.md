@@ -3,6 +3,8 @@
 A tiny compatibility patch for people running **Elianora's Breezehome Overhaul (EBO)** together with
 **Embers XD** and **Lux**.
 
+**Download:** [Nexus Mods](https://www.nexusmods.com/skyrimspecialedition/mods/198626)
+
 ## The problem
 
 EBO removes Breezehome's central firepit, puts a coffee table there and reuses the fire for its new
@@ -31,17 +33,23 @@ No new records, no scripts. The plugin is ESL-flagged, so it does not use a full
 
 ## Requirements
 
-- Elianora's Breezehome Overhaul, **EBO-3X** (`Eli_Breezehome.esp`)
-- Embers XD (`Embers XD.esp`)
+- [Elianora's Breezehome Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/2829), **EBO-3X** (`Eli_Breezehome.esp`)
+- [Embers XD](https://www.nexusmods.com/skyrimspecialedition/mods/37085) (`Embers XD.esp`)
 
 Lux is not a master. Without the Lux Patch Hub's Embers XD patch only the extra ember effect needs
 fixing, and the patch still handles that.
 
-## Load order
+## Installation and load order
+
+Install it with your mod manager from [Nexus Mods](https://www.nexusmods.com/skyrimspecialedition/mods/198626),
+or drop the `.esp` from this repository into your `Data` folder.
 
 Load it **after** `Lux - Embers XD patch.esp` (and therefore after `Eli_Breezehome.esp` and
 `Embers XD.esp`). EBO's own lighting patch, for example `Eli_Breezehome [PATCH - Lux].esp`, should
 still load later than this one so it keeps winning the cell record.
+
+Safe to add mid-playthrough. If the effects are still there on a save that had already visited the
+house, check on a save from before that visit.
 
 ## Tested with
 
@@ -53,7 +61,7 @@ Built against and tested in game with:
 - Skyrim SE 1.5.97, on a Nolvus Awakening setup
 
 Other versions are untested. The three restored references are copied from EBO-3X v3.4, so a later
-EBO release that changes them would need a rebuild.
+EBO release that changes them would need a rebuild. EBO-2X is untested.
 
 ## Rebuilding
 
@@ -68,6 +76,7 @@ records it needs is missing.
 
 ## Credits
 
-- Elianora and KhrysINXS for Elianora's Breezehome Overhaul
-- mindflux for Embers XD
-- GGUNIT for Lux
+- Elianora and KhrysINXS for [Elianora's Breezehome Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/2829).
+  This patch contains copies of three of its reference records, as its permissions allow with credit.
+- mindflux for [Embers XD](https://www.nexusmods.com/skyrimspecialedition/mods/37085)
+- GGUNIT for [Lux](https://www.nexusmods.com/skyrimspecialedition/mods/43158)
